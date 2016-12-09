@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>菜鸟教程 React 实例</title>
+    <script src="../../bower_components/react/react.js"></script>
+    <script src="../../bower_components/react/react-dom.js"></script>
+    <script src="../js/browser.min.js"></script>
+    <style>
+        .btn{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div id="container"></div>
+<script>
+   /* var ExampleMethod = React.createClass({
+        render: function () {
+            return React.DOM.aside(null, 'React Hello word date:' + this.props.elapsed + '')
+        }
+    })
+    var ExampleFactory = React.createFactory(ExampleMethod);
+    setInterval(function () {
+        ReactDOM.render(
+            ExampleFactory({elapsed: new Date().getSeconds()}),
+            document.getElementById('container')
+        );
+    }, 100)*/
+</script>
+<script type="text/babel">
+    //todo Capital 首字母需要大写
+    var Counter = React.createClass({
+        getInitialState: function () {
+            return {cot: 0}
+        },
+        methodClick: function () {
+            this.setState({
+                cot: this.state.cot + 10000
+            })
+        },
+        render: function () {
+            return (
+                    <button onClick={this.methodClick} className="btn">
+                        MethodClick: {this.state.cot}
+                    </button>
+            );
+        }
+    });
+    ReactDOM.render(<Counter/>, document.getElementById('container'));
+</script>
+</body>
+</html>

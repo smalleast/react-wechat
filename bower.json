@@ -1,0 +1,25 @@
+{
+  "name": "react-wechat",
+  "description": "wechat shop",
+  "main": "index.js",
+  "authors": [
+    "smalleast"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "wechat",
+    "shop"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "react": "^15.4.1"
+  }
+}
