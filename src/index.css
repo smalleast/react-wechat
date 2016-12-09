@@ -1,0 +1,11 @@
+* {
+    font-size: 22px;
+}
+
+.header {
+    margin: 50px 0;
+}
+
+.active {
+    color: blue;
+}
